@@ -75,14 +75,14 @@ body{
 }
 
 .slide:nth-of-type(1) {
-    background: url("../img/Cover1.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover1.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .slide:nth-of-type(2) {
-    background: url("../img/Cover2.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover2.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -90,7 +90,7 @@ body{
 	background-position: top;
 }
 .slide:nth-of-type(3) {
-    background: url("../img/Cover3.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover3.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -98,14 +98,14 @@ body{
 	background-position: top center;
 }
 .slide:nth-of-type(4) {
-    background: url("../img/Cover4.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover4.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .slide:nth-of-type(5) {
-    background: url("../img/Cover5.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover5.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -113,7 +113,7 @@ body{
 }
 
 .slide:nth-of-type(6) {
-    background: url("../img/Cover6.jpg") no-repeat center center fixed;
+    background: url("../img/cover/Cover6.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
