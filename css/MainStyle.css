@@ -1,15 +1,23 @@
 @charset "utf-8";
+
 /*SITE WIDE*/
-html{
-	background-color: black;
-}
+html{background-color: black;}
+
 /*UNIVERSAL HEADER*/
 .NavBar{
 	display: flex;
 	max-width: 100%;
 	min-width: 200px;
 }
-
+.active{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", sans-serif;
+	font-style: oblique;
+	font-size: calc(.5em + 2vm);
+	font-weight: 200;
+	letter-spacing: 1px;
+	width: 20%;
+	padding: 15px;
+}
 .NavBar img{
 	position:relative;
 	max-width: 100%;
@@ -20,20 +28,17 @@ html{
 	padding-right: 1%;
 	z-index: 3;
 }
-
 .menuButton {
 	display: inline-block;
 	cursor: pointer;
 	width: 100px;
 	padding: 10px;
 }
-
 .menu {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 }
-
 .item{
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", sans-serif;
 	font-style: oblique;
@@ -43,7 +48,6 @@ html{
 	padding: 15px;
 	display: none;
 }
-
 .bar1, .bar2, .bar3 {
   width: 60px;
   height: 10px;
@@ -52,27 +56,25 @@ html{
   transition: 0.5s;
   justify-content: flex-end; 
 }
-
 /* Rotate first bar */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-14px, 13px) ;
   transform: rotate(-45deg) translate(-14px, 13px) ;
 }
-
 /* Fade out the second bar */
 .change .bar2 {
   opacity: 0;
 }
-
 /* Rotate last bar */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-14px, -15px) ;
   transform: rotate(45deg) translate(-14px, -15px) ;
 }
-
+/*show menu items*/
 .change .item{
 	display: flex;
 }
+
 
 
 
@@ -85,7 +87,6 @@ html{
 	justify-content: center;
 	z-index: 1;
 }
-
 .cell{
 	max-width: 100%;
 	max-height: 100%;
@@ -98,7 +99,8 @@ html{
 
 
 
-/*Galleries*/
+
+/*GALLERIES PAGE*/
 .GalleryList{
 	display: flex;
 	flex-wrap: wrap;
@@ -123,6 +125,29 @@ html{
 	z-index: 2;
 	flex-basis: 100px;
 }
+
+
+
+
+/*INDIVIDUAL GALLERIES*/
+.Gallery{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
+	z-index: 1;
+}
+.gcell{
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+	z-index: 2;
+	flex-basis: 100px;
+}
+
 
 
 
@@ -167,7 +192,6 @@ html{
 	padding-left: 200px;
 	padding-bottom: 150px;
 }
-
 .info p{
 	position: absolute;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", sans-serif;
@@ -183,11 +207,9 @@ html{
 	.item{
 		font-size: 2;
 	}
-	
 	.Portfolio{
 		flex-direction: column;
 	}
-	
 	.responsive{
 		max-width: 100%;
 	}
@@ -206,16 +228,17 @@ html{
 		padding-right: 10px;
 		padding-bottom: 100px;
 	}
-	
 	.GalleryList{
 		margin-top: 20px;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	
 	.galCell{
 		margin: 0px;
 		padding: 30px;
+	}
+	.Gallery{
+		flex-direction: column;
 	}
 }
 
@@ -224,34 +247,34 @@ html{
 	.bar1, .bar2, .bar3 {
 		display: none;
 	}
-	
 	.menu{
 		flex-direction: row;
 		position: absolute;
 		top: 60px;
 		right: 50px;
 	}
-	
 	.item{
 		display: flex;
 	}
-	
 	.bio h2{
 		padding-right: 200px;
 		padding-left: 200px;
 		padding-bottom: 150px;
 	}
-	
 	.bio h3{
 		padding-right: 200px;
 		padding-left: 200px;
 		padding-bottom: 150px;
 	}
-	
 	.bio p{
 		padding-right: 200px;
 		padding-left: 200px;
 		padding-bottom: 150px;
+	}
+	.GalleryList{
+		margin-top: 70px;
+		margin-left: 200px;
+		margin-right: 200px;
 	}
 }
 
@@ -273,5 +296,11 @@ html{
 		padding-right: 300px;
 		padding-left: 300px;
 		padding-bottom: 150px;
+	}
+	
+	.GalleryList{
+		margin-top: 70px;
+		margin-left: 300px;
+		margin-right: 300px;
 	}
 }
