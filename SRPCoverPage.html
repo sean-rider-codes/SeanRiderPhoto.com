@@ -16,19 +16,19 @@
 	</div>
 	
 	<ul id="slides">
-    	<li class="slide showing">Slide1</li>
-    	<li class="slide">Slide2</li>
-    	<li class="slide">Slide3</li>
-    	<li class="slide">Slide4</li>
-    	<li class="slide">Slide5</li>
-		<li class="slide">Slide6</li>
+    	<li class="slide showing"></li>
+    	<li class="slide"></li>
+    	<li class="slide"></li>
+    	<li class="slide"></li>
+    	<li class="slide"></li>
+		<li class="slide"></li>
 	</ul>
 	
 	<script type="text/javascript">
 		window.onload = function(){
 			var slides = document.querySelectorAll('#slides .slide');
 			var currentSlide = 0;
-			var slideInterval = setInterval(nextSlide,5000);
+			var slideInterval = setInterval(nextSlide,4000);
 
 			function nextSlide() {
 				slides[currentSlide].className = 'slide';
