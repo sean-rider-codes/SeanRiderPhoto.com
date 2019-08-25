@@ -31,5 +31,65 @@
 	<script type="text/javascript">
 		function toggleMenu(x) {x.classList.toggle("change");}
 	</script>
+	
+	<!--
+	<ul class = "galList">
+		<?php
+			$dirname = "RBImg/";
+			$images = scandir($dirname);
+			$ignore = Array(".", "..");
+			foreach($images as $curimg){
+				if(!in_array($curimg, $ignore)){
+					echo "<li><a href='".$dirname.$curimg."'><img src='img.php?src=".$dirname.$curimg."&w=300&zc=1' alt='' /></a></li>n ";
+				}
+			}
+		?>
+	</ul>
+	-->
+	
+	<div class = "Gallery">
+		<div class = "gcell"><img id ="RB1" src ="RBImg/RandyBachmanFargo-1.jpg" alt ="rb1" class="responsive"></div>
+		<div class = "gcell"><img id ="RB2" src ="RBImg/RandyBachmanFargo-2.jpg" alt ="rb2" class="responsive"></div>
+		<div class = "gcell"><img id ="RB3" src ="RBImg/RandyBachmanFargo-3.jpg" alt ="rb3" class="responsive"></div>
+		<div class = "gcell"><img id ="RB4" src ="RBImg/RandyBachmanFargo-4.jpg" alt ="rb4" class="responsive"></div>
+		<div class = "gcell"><img id ="RB5" src ="RBImg/RandyBachmanFargo-5.jpg" alt ="rb5" class="responsive"></div>
+		<div class = "gcell"><img id ="RB6" src ="RBImg/RandyBachmanFargo-6.jpg" alt ="rb6" class="responsive"></div>
+		<div class = "gcell"><img id ="RB7" src ="RBImg/RandyBachmanFargo-7.jpg" alt ="rb7" class="responsive"></div>
+		<div class = "gcell"><img id ="RB8" src ="RBImg/RandyBachmanFargo-8.jpg" alt ="rb8" class="responsive"></div>
+		<div class = "gcell"><img id ="RB9" src ="RBImg/RandyBachmanFargo-9.jpg" alt ="rb9" class="responsive"></div>
+		<div class = "gcell"><img id ="RB10" src ="RBImg/RandyBachmanFargo-10.jpg" alt ="rb10" class="responsive"></div>
+		<div class = "gcell"><img id ="RB11" src ="RBImg/RandyBachmanFargo-11.jpg" alt ="rb11" class="responsive"></div>
+		<div class = "gcell"><img id ="RB12" src ="RBImg/RandyBachmanFargo-12.jpg" alt ="rb12" class="responsive"></div>
+		<div class = "gcell"><img id ="RB13" src ="RBImg/RandyBachmanFargo-13.jpg" alt ="rb13" class="responsive"></div>
+		<div class = "gcell"><img id ="RB14" src ="RBImg/RandyBachmanFargo-14.jpg" alt ="rb14" class="responsive"></div>
+		<div class = "gcell"><img id ="RB15" src ="RBImg/RandyBachmanFargo-15.jpg" alt ="rb15" class="responsive"></div>
+		<div class = "gcell"><img id ="RB16" src ="RBImg/RandyBachmanFargo-16.jpg" alt ="rb16" class="responsive"></div>
+		<div class = "gcell"><img id ="RB17" src ="RBImg/RandyBachmanFargo-17.jpg" alt ="rb17" class="responsive"></div>
+		<div class = "gcell"><img id ="RB18" src ="RBImg/RandyBachmanFargo-18.jpg" alt ="rb18" class="responsive"></div>
+		<div class = "gcell"><img id ="RB19" src ="RBImg/RandyBachmanFargo-19.jpg" alt ="rb19" class="responsive"></div>
+		<div class = "gcell"><img id ="RB20" src ="RBImg/RandyBachmanFargo-20.jpg" alt ="rb20" class="responsive"></div>
+		<div class = "gcell"><img id ="RB21" src ="RBImg/RandyBachmanFargo-21.jpg" alt ="rb21" class="responsive"></div>
+		<div class = "gcell"><img id ="RB22" src ="RBImg/RandyBachmanFargo-22.jpg" alt ="rb22" class="responsive"></div>
+		<div class = "gcell"><img id ="RB23" src ="RBImg/RandyBachmanFargo-23.jpg" alt ="rb23" class="responsive"></div>
+		<div class = "gcell"><img id ="RB24" src ="RBImg/RandyBachmanFargo-24.jpg" alt ="rb24" class="responsive"></div>
+		<div class = "gcell"><img id ="RB25" src ="RBImg/RandyBachmanFargo-25.jpg" alt ="rb25" class="responsive"></div>
+		<div class = "gcell"><img id ="RB26" src ="RBImg/RandyBachmanFargo-26.jpg" alt ="rb26" class="responsive"></div>
+		<div class = "gcell"><img id ="RB27" src ="RBImg/RandyBachmanFargo-27.jpg" alt ="rb27" class="responsive"></div>
+		<div class = "gcell"><img id ="RB28" src ="RBImg/RandyBachmanFargo-28.jpg" alt ="rb28" class="responsive"></div>
+		<div class = "gcell"><img id ="RB29" src ="RBImg/RandyBachmanFargo-29.jpg" alt ="rb29" class="responsive"></div>
+		<div class = "gcell"><img id ="RB30" src ="RBImg/RandyBachmanFargo-30.jpg" alt ="rb30" class="responsive"></div>
+		<div class = "gcell"><img id ="RB31" src ="RBImg/RandyBachmanFargo-31.jpg" alt ="rb31" class="responsive"></div>
+		<div class = "gcell"><img id ="RB32" src ="RBImg/RandyBachmanFargo-32.jpg" alt ="rb32" class="responsive"></div>
+		<div class = "gcell"><img id ="RB33" src ="RBImg/RandyBachmanFargo-33.jpg" alt ="rb33" class="responsive"></div>
+		<div class = "gcell"><img id ="RB34" src ="RBImg/RandyBachmanFargo-34.jpg" alt ="rb34" class="responsive"></div>
+		<div class = "gcell"><img id ="RB35" src ="RBImg/RandyBachmanFargo-35.jpg" alt ="rb35" class="responsive"></div>
+		<div class = "gcell"><img id ="RB36" src ="RBImg/RandyBachmanFargo-36.jpg" alt ="rb36" class="responsive"></div>
+		<div class = "gcell"><img id ="RB37" src ="RBImg/RandyBachmanFargo-37.jpg" alt ="rb37" class="responsive"></div>
+		<div class = "gcell"><img id ="RB38" src ="RBImg/RandyBachmanFargo-38.jpg" alt ="rb38" class="responsive"></div>
+		<div class = "gcell"><img id ="RB39" src ="RBImg/RandyBachmanFargo-39.jpg" alt ="rb39" class="responsive"></div>
+		<div class = "gcell"><img id ="RB40" src ="RBImg/RandyBachmanFargo-40.jpg" alt ="rb40" class="responsive"></div>
+		<div class = "gcell"><img id ="RB41" src ="RBImg/RandyBachmanFargo-41.jpg" alt ="rb41" class="responsive"></div>
+	</div>
+	
 </body>
 </html>
