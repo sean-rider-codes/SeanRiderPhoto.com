@@ -1,6 +1,6 @@
 import os
 
-url = 'E:\Libraries\Documents\GitHub\SeanRiderPhoto.com\Galleries\SCImg\ '[:-1]
+url = 'E:\Libraries\Documents\GitHub\SeanRiderPhoto.com\img\other\ '[:-1]
 
 entries = os.listdir(url)
 
