@@ -119,3 +119,11 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.slide:nth-of-type(7) {
+    background: url("../img/cover/Cover7.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
